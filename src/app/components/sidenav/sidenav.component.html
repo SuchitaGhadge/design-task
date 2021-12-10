@@ -1,0 +1,62 @@
+<!-- Vertical navbar -->
+<div class="vertical-nav bg-white" [class.active] = "isExpanded"   id="sidebar">
+  <div class="py-4 px-3 mb-4 bg-light">
+    <div class="media d-flex align-items-center">
+      <p
+        loading="lazy"
+        class="m-3  px-3 rounded bg-primary shadow-sm text-white display-5"
+      >L</p>
+      <div class="media-body">
+        <h4 class="m-0">Logo</h4>
+      </div>
+    </div>
+  </div>
+
+  <ul class="nav flex-column bg-white mb-0">
+    <li class="nav-item">
+        <a routerLink='' routerLinkActive="active" 
+        [routerLinkActiveOptions]={exact:true} class="nav-link d-flex">
+          <fa-icon class="nav-icon px-4" [icon]="faAlignLeft"></fa-icon>
+          dashboard
+        </a>
+    </li>
+    <li class="nav-item">
+        <a routerLink='/classes' routerLinkActive="active" class="nav-link d-flex">
+          <fa-icon class="nav-icon px-4" [icon]="faFolder"></fa-icon>
+          Classes
+        </a>
+      </li>
+    <li class="nav-item">
+      <a routerLink='/resources' routerLinkActive="active" class="nav-link d-flex">
+        <fa-icon class="nav-icon px-4" [icon]="faAddressBook"></fa-icon>
+        Resources
+      </a>
+    </li>
+    <li class="nav-item">
+        <a routerLink='/learning-plan' routerLinkActive="active" class="nav-link d-flex">
+          <fa-icon class="nav-icon px-4" [icon]="faCalendar"></fa-icon>
+          Learning Plan
+        </a>
+      </li>
+    <li class="nav-item">
+        <a routerLink='/chat' routerLinkActive="active" class="nav-link d-flex">
+          <fa-icon class="nav-icon px-4" [icon]="faCommentAlt"></fa-icon>
+          Chat
+        </a>
+    </li>
+    <li class="nav-item">
+        <a routerLink='/settings' routerLinkActive="active" class="nav-link d-flex">
+          <fa-icon class="nav-icon px-4" [icon]="faEdit"></fa-icon>
+          Settings
+        </a>
+      </li>
+  </ul>
+</div>
+<!-- End vertical navbar -->
+
+<div class="page-content p-5" [class.active] = "isExpanded" id="content">
+    <!-- Toggle button -->
+    <button id="sidebarCollapse" type="button" class="btn btn-light bg-white rounded-pill shadow-sm px-4 mb-4" (click)="onClick()"><i class="fa fa-bars mr-2"></i><small class="text-uppercase font-weight-bold">Toggle</small></button>
+
+    <router-outlet></router-outlet>
+</div>

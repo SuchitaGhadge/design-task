@@ -1,0 +1,47 @@
+/* .card{
+    background: #eec9d2;
+    outline: none;
+    border: none;
+} */
+
+
+.card{
+    border-radius: 1.5rem;
+}
+
+#date{
+    margin: 5px;
+    padding: 5px;
+}
+
+#searchbox{
+    outline: none;
+    border: none;
+    background:none;
+    color: #c1c1c1;
+    line-height: 1rem;
+    font-size: 18px;
+    padding: 5px 25px;
+    border-bottom: 1px solid #6E3CBC;
+    border-radius: 0.5rem;
+}
+
+.hero-card{
+    background: #fd8491;
+}
+
+.purple-card{
+    background: #6E3CBC;
+}
+
+.purple-card-light{
+    background: #B983FF;
+}
+
+.coral-card{
+    background: var(--primary-font);
+}
+
+.mainCardFont{
+    font-weight: 600;
+}

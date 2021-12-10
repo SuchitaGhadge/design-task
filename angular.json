@@ -94,9 +94,13 @@
               "src/assets"
             ],
             "styles": [
+              "./node-modules/bootstrap/dist/css/bootstrap.min.css",
+              "./node-modules/bootstrap-icons/font/bootstrap-icons.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "./node-modules/bpptstrap/dist/js/bootstrap.min.js"
+            ]
           }
         }
       }
